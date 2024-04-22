@@ -8,6 +8,9 @@ dependencies:
   axios:
     specifier: ^1.5.0
     version: 1.6.8(debug@4.3.4)
+  ccxt:
+    specifier: ^4.3.2
+    version: 4.3.2
   dotenv:
     specifier: ^16.3.1
     version: 16.4.5
@@ -119,6 +122,18 @@ packages:
 
   /buffer-fill@1.0.0:
     resolution: {integrity: sha512-T7zexNBwiiaCOGDg9xNX9PBmjrubblRkENuptryuI64URkXDFum9il/JGL8Lm8wYfAXpredVXXZz7eMHilimiQ==}
+    dev: false
+
+  /ccxt@4.3.2:
+    resolution: {integrity: sha512-23USAcvJGl9FY0NBDJORHAn6OXrgrmi2WnkttUpror7LI+ZfwoHTFmwJoe8p89mx2C3isTo0vCCOY4F57uVS+g==}
+    engines: {node: '>=15.0.0'}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      ws: 8.16.0
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
     dev: false
 
   /chokidar@3.6.0:
@@ -488,6 +503,19 @@ packages:
     dependencies:
       tr46: 0.0.3
       webidl-conversions: 3.0.1
+    dev: false
+
+  /ws@8.16.0:
+    resolution: {integrity: sha512-HS0c//TP7Ina87TfiPUz1rQzMhHrl/SG2guqRcTOIUYD2q8uhUdNHZYJUaQ8aTGPzCh+c6oawMKW35nFl1dxyQ==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: '>=5.0.2'
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
     dev: false
 
   /yallist@4.0.0:
